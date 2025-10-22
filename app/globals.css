@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* === GLOBAL RESET === */
+html,
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* === LIGHTNING GLOW ANIMATION === */
+/* Uses a pseudo-element so it always renders correctly in Next.js + Turbopack */
+.glow-bolt {
+  position: relative;
+  isolation: isolate;
+}
+
+.glow-bolt::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #ffd84d 0%, #ffb300 55%, #e39900 100%);
+  opacity: 0.7;
+  filter: blur(8px);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+}
+
+/* === FADE-IN REVEAL === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === BUTTON + CARD POLISH (OPTIONAL) === */
+button,
+a {
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.9;
+}
