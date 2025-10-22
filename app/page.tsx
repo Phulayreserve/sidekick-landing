@@ -109,7 +109,7 @@ export default function Home() {
         <section className="fade-in">
           <div className="rounded-2xl bg-gradient-to-b from-[#0a0a0a] to-[#000] border border-gray-800 p-8 shadow-[0_0_40px_rgba(255,216,77,0.05)]">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Sidekick was created by sales operators and engineers obsessed with fixing the grind of selling. We're building a lightning-fast AI platform that helps reps stay focused, sound sharp, and move faster — no fluff, no friction, just performance.
+              Sidekick was created by sales operators and engineers obsessed with fixing the grind of selling. We are building a lightning-fast AI platform that helps reps stay focused, sound sharp, and move faster — no fluff, no friction, just performance.
             </p>
           </div>
         </section>
