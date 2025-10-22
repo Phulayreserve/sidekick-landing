@@ -142,7 +142,7 @@ export default function Home() {
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl border border-gray-800 bg-black shadow-[0_0_30px_rgba(255,216,77,0.05)]">
             <iframe
-              src="https://tally.so/r/m6XXxN"
+              src="https://tally.so/embed/m6XXxN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
               width="100%"
               height="470"
               frameBorder="0"
